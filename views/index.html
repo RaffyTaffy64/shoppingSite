@@ -1,20 +1,92 @@
-<html>
-  <head>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="/css/homepage.css" />
-    <title>Shopping Site Exercise</title>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order a Smoothiegram!</title>
+</head>
+<body>
+  <header>
+      <h1>Order a Smoothiegram</h1>
 
-  <body>
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <a href="/all-animals" class="btn btn-lg btn-primary">Shop Now</a>
-      </div>
-    </div>
-  </body>
+      <p>There's no better way to show a loved one you care than with a Smoothiegram!</p>
+
+      <p>Each Smoothiegram comes with a custom message printed on high-quality cardstock
+      and your choice of a premium, hand-crafted smoothie.</p>
+
+  </header>
+
+  <main>
+    <section>
+      <h2>Smoothie Options</h2>
+      
+      <p>Choose from one of these smoothies.</p>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Flavor</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Super Strawberries Delicious</td>
+            <td>$1,200.00</td>
+          </tr>
+
+          <tr>
+            <td>White Grape Ranger</td>
+            <td>$400.00</td>
+          </tr>
+
+          <tr>
+            <td>Blueberry Blast</td>
+            <td>$1,750.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <section>
+      <h2>Order Form</h2>
+      
+      <form>
+      <label>Your name</label>
+      <input type="text" name="sender"/>
+      
+      <label>Who are we sending this to?</label>
+      <input type="text" name="recipient"/>
+      
+      <label>Choose a smoothie</label>
+      <select name="smoothie">
+
+        <option value="">Please choose an option</option>
+        <option value="superStrawberriesDelicious">Super Strawberries Deliciious</option>
+        <option value="whiteGrapeRanger">White Grape Ranger</option>
+        <option value="blueberryBlast">Blueberry Blast</option>
+      </select>
+      
+      <span>When should we deliver?</span>
+      <input type="radio" name="delivery-time" value="asap"/>
+      <label>As soon as possible</label>
+
+      <input type="radio" name="delivery-time" value="am"/>
+      <label>Morning</label>
+      
+      <input type="radio" name="delivery-time" value="pm"/>
+      <label>Afternoon</label>
+      
+      <label>Enter your message</label>
+      <textarea name="message"></textarea>
+      
+      <label>Subscribe to our newsletter?</label>
+      <input type="checkbox" name="subscribe" value="yes" checked>
+
+      <label>Submit</label>
+      <input type="submit"/>
+      </form>
+    </section>
+  </main>
+</body>
 </html>
